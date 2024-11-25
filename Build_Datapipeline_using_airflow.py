@@ -13,8 +13,12 @@ from datetime import datetime, timedelta
 default_args ={
     'ownername':'root'
 }
-DATASET_PATH = '/root/airflow/datasets/insurance_airflow_dataset.csv'
-OUTPUT_PATH ='/root/airflow/outputs/{0}.csv'
+# give your dataset path 
+
+DATASET_PATH = '' 
+
+# give your dataset path to save proceesed dataset
+OUTPUT_PATH =''
 
 def read_csv_file(ti):
     df = pd.read_csv(DATASET_PATH)
